@@ -8,17 +8,11 @@ public class Test {
 
         System.out.println(mySinglyLL.isEmpty()); // true
 
-        Node node1 = new Node(1);
-        Node node2 = new Node(2);
-        Node node3 = new Node(3);
-        Node node4 = new Node(4);
-        Node node5 = new Node(5);
-
-        mySinglyLL.add(node1.value);
-        mySinglyLL.add(node2.value);
-        mySinglyLL.add(node3.value);
-        mySinglyLL.add(node4.value);
-        mySinglyLL.add(node5.value);
+        mySinglyLL.add(1);
+        mySinglyLL.add(2);
+        mySinglyLL.add(3);
+        mySinglyLL.add(4);
+        mySinglyLL.add(5);
 
         System.out.println(mySinglyLL.isEmpty()); // false
 

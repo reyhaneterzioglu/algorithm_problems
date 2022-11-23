@@ -7,18 +7,11 @@ public class Test {
 
         MyDoublyLinkedList myDoublyLL = new MyDoublyLinkedList();
 
-        Node n1 = new Node(10);
-        Node n2 = new Node(20);
-        Node n3 = new Node(30);
-        Node n4 = new Node(40);
-        Node n5 = new Node(50);
-
-
-        myDoublyLL.add(n1.value);
-        myDoublyLL.add(n2.value);
-        myDoublyLL.add(n3.value);
-        myDoublyLL.add(n4.value);
-        myDoublyLL.add(n5.value);
+        myDoublyLL.add(10);
+        myDoublyLL.add(20);
+        myDoublyLL.add(30);
+        myDoublyLL.add(40);
+        myDoublyLL.add(50);
 
         System.out.println(myDoublyLL.isEmpty());
 
