@@ -32,14 +32,30 @@ public class AddDigitsUntilOneDigit {
         return sum;
     }
 
+    public static int sumOfDigitsUntilOneDigit2(int n) { // O(log n)
+
+        int sum = 0;
+
+        while (n > 0) {
+            sum += n % 10;
+            n /= 10;
+        }
+
+        if (sum < 10) return sum;
+
+        return sumOfDigitsUntilOneDigit2(sum);
+    }
+
 
     // testing
 
     public static void main(String[] args) {
 
-
         System.out.println(sumOfDigitsUntilOneDigit(1668)); //21 -> 3 ==> 3
         System.out.println(sumOfDigitsUntilOneDigit(333348)); //24 -> 6 ==> 6
+
+        System.out.println(sumOfDigitsUntilOneDigit2(1668)); //21 -> 3 ==> 3
+        System.out.println(sumOfDigitsUntilOneDigit2(333348)); //24 -> 6 ==> 6
 
     }
 }
