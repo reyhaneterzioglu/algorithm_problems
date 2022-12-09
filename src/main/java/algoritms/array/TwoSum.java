@@ -35,7 +35,7 @@ public class TwoSum {
      * You can return the answer in any order.
      */
 
-    public static int[] twoSum2(int[] array, Integer target) {
+    public static int[] twoSum2(int[] array, int target) {
 
         Map<Integer, Integer> map = new HashMap<>();
 
